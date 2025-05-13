@@ -62,24 +62,36 @@ To clone this repository, run the following command:
 ```bash
 git clone https://github.com/chamalka1998/Movie-Explorer.git
 cd movie-explorer
+```
 
-# Once you have cloned the repository, run the following command to install the required dependencies:
+### 2. Once you have cloned the repository, run the following command to install the required dependencies:
+
+```bash
 npm install
+```
 
-# Create a .env file in the project root by copying the .env.example file
+### 3. Create a .env file in the project root by copying the .env.example file
+
+```bash
 cp .env.example .env
+```
 
-    REACT_APP_TMDB_API_KEY=your_tmdb_api_key
-    REACT_APP_YT_API_KEY=your_youtube_api_key
+### 4. Then, open the .env file and replace the placeholder values with your actual API keys:
 
-    REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-    REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-    REACT_APP_FIREBASE_PROJECT_ID=your_project_id
-    REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
-    REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-    REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+```bash
+REACT_APP_TMDB_API_KEY=your_tmdb_api_key
+REACT_APP_YT_API_KEY=your_youtube_api_key
 
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+```
 
-# To run the app locally, use the following command:
+### 5. To run the app locally, use the following command:
+
+```bash
 npm start
 ```
