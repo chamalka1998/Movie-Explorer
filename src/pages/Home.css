@@ -1,0 +1,31 @@
+/* src/pages/Home.css */
+.home-container {
+  padding: 1rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Light Mode – Let MUI default typography colors apply */
+.home-container.light-mode {
+  background: linear-gradient(135deg, #f9f9f9, #e6ecf0);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Optional for <p> tags in light mode */
+.home-container.light-mode p {
+  color: #444; /* Optional: subtle gray if you want to differentiate */
+}
+
+/* Dark Mode – Custom styling */
+.home-container.dark-mode {
+  background-color: #1e1e2f;
+  /* color: #e0e0e0; Base color for plain text */
+}
+
+/* Apply custom text color for specific tags in dark mode */
+.home-container.dark-mode p,
+.home-container.dark-mode .MuiTypography-root {
+  color: #e0e0e0 !important; /* Ensure MUI Typography also reflects dark text */
+}

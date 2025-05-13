@@ -1,0 +1,128 @@
+/* Navbar.css */
+
+/* Common Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 16px;
+  margin: 10px auto;
+  max-width: 1200px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Logo Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo-img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+.navbar-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Right-Side Utilities */
+.navbar-utilities {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Light Theme */
+.navbar.light {
+  background: linear-gradient(135deg, #ffffff, #e0f0ff);
+  color: #1a1a1a;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.navbar.light .navbar-links a {
+  color: #1a1a1a;
+}
+
+.navbar.light .navbar-links a:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+
+/* Dark Theme */
+.navbar.dark {
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  color: #f5f5f5;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.03);
+}
+
+.navbar.dark .navbar-links a {
+  color: #f5f5f5;
+}
+
+.navbar.dark .navbar-links a:hover {
+  background-color: rgba(0, 191, 255, 0.1);
+  color: #00bfff;
+}
+
+/* Responsive Touch (optional) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .navbar-utilities {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

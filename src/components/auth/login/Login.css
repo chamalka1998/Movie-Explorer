@@ -1,0 +1,124 @@
+/* Login.css */
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+
+.login-box {
+  width: 24rem; /* 96px x 4 */
+  color: #4b5563; /* text-gray-600 */
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937; /* text-gray-800 */
+  margin-top: 0.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  color: #6b7280; /* text-gray-500 */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: transparent;
+  transition: border 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #4f46e5; /* border-indigo-600 */
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.submit-button,
+.google-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button {
+  background-color: #4f46e5; /* bg-indigo-600 */
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+.submit-button:disabled {
+  background-color: #d1d5db; /* bg-gray-300 */
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #e5e7eb;
+}
+
+.google-button {
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: white;
+}
+
+.google-button:hover {
+  background-color: #f3f4f6;
+}
+
+.google-button:disabled {
+  cursor: not-allowed;
+}
+
+.register-link {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.register-link a {
+  font-weight: bold;
+  text-decoration: underline;
+}

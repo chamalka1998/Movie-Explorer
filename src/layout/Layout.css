@@ -1,0 +1,47 @@
+/* Layout.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.layout {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.layout.light {
+  background: linear-gradient(135deg, #f9f9f9, #e6ecf0);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.layout.dark {
+  background-color: #1e1e2f; /* Dark bluish-gray base */
+  color: #e0e0e0;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+/* Optional: Adjust global elements like links, headings etc. */
+.layout.dark a {
+  color: #90caf9; /* Soft blue links in dark mode */
+}
+
+.layout.dark h1,
+.layout.dark h2,
+.layout.dark h3 {
+  color: #ffffff;
+}
+
+.layout.dark .card {
+  background-color: #2c2c3e;
+  border: 1px solid #3f3f5b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+}

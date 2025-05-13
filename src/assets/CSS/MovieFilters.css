@@ -1,0 +1,52 @@
+/* MovieFilters.css */
+
+.movie-filters-container {
+  padding: 20px 0;
+  padding-bottom: 70px;
+}
+
+.movie-filters-container.dark {
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie-filters-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.movie-filters-title.dark {
+  color: #e0e0e0;
+}
+
+.custom-select {
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  min-width: 22vw;
+}
+
+.custom-select.dark {
+  background-color: #2c2c3a;
+  color: #e0e0e0;
+  min-width: 22vw;
+}
+
+.custom-select .MuiOutlinedInput-notchedOutline {
+  border-color: #ccc;
+}
+
+.custom-select.dark .MuiOutlinedInput-notchedOutline {
+  border-color: #555;
+}
+
+.custom-select:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #000;
+}
+
+.custom-select.dark:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #e0e0e0;
+}

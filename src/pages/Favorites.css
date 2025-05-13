@@ -1,0 +1,41 @@
+/* src/pages/Favorites.css */
+.favorites-container {
+  padding: 1rem;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Light Theme */
+.favorites-container.light-mode {
+  background: linear-gradient(135deg, #f9f9f9, #e6ecf0);
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Dark Theme - Modern Styled */
+.favorites-container.dark-mode {
+  background-color: #1e1e2f;
+  color: #e0e0e0 !important;
+}
+
+.favorites-container.dark-mode h1 {
+  color: #f0f0f0;
+}
+
+.favorites-container.light-mode h1 {
+  color: #222;
+}
+
+/* Grid Layout */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+/* Apply custom text color for specific tags in dark mode */
+.favorites-container.dark-mode p,
+.favorites-container.dark-mode .MuiTypography-root {
+  color: #e0e0e0 !important; /* Ensure MUI Typography also reflects dark text */
+}
