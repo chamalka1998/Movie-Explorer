@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🎬 Movie Explorer App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive React.js web application that allows users to browse, filter, and explore movies using data from The Movie Database (TMDb) API. Users can filter movies by genre, year, and rating, as well as manage a list of favorite movies. Built with Material UI, Redux, Firebase, and YouTube API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features Implemented
 
-### `npm start`
+- 🔍 **Movie Browsing**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - Browse movies with pagination and dynamic loading
+  - "Load More" button for fetching more results
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🎯 **Filter Options**
 
-### `npm test`
+  - Filter movies by:
+    - Genre
+    - Release Year
+    - Average Rating
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 💡 **Favorites Feature**
 
-### `npm run build`
+  - Authenticated users can add/remove movies to/from favorites
+  - Favorites are stored in Firebase Firestore
+  - View and manage favorites from a separate page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔒 **Authentication**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Firebase Authentication using email & password
+  - Conditional rendering based on user login state
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🌗 **Dark Mode Support**
 
-### `npm run eject`
+  - Global light/dark theme toggle using Redux
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🧭 **Routing**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - React Router for navigation between Home, Favorites, Login, and Sign Up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- 🎥 **YouTube Trailer Videos**
+  - Integrated YouTube API to fetch and display trailer videos for each movie
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🔧 Tech Stack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Frontend**: React.js, Material UI
+- **State Management**: Redux Toolkit
+- **Backend**: Firebase (Firestore + Authentication)
+- **API**: [TMDb (The Movie Database)](https://www.themoviedb.org/), [YouTube API](https://developers.google.com/youtube/v3)
+- **Routing**: React Router DOM
+- **Other Libraries**: Axios, UUID, etc.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠️ Project Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 1. Clone the Repository
 
-### Analyzing the Bundle Size
+To clone this repository, run the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+git clone https://github.com/chamalka1998/Movie-Explorer.git
+cd movie-explorer
 
-### Making a Progressive Web App
+# Once you have cloned the repository, run the following command to install the required dependencies:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Create a .env file in the project root by copying the .env.example file
+cp .env.example .env
 
-### Advanced Configuration
+    REACT_APP_TMDB_API_KEY=your_tmdb_api_key
+    REACT_APP_YT_API_KEY=your_youtube_api_key
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+    REACT_APP_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+    REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+    REACT_APP_FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+    REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+    REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# To run the app locally, use the following command:
+npm start
+```
